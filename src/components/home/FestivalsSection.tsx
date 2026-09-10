@@ -27,10 +27,11 @@ const FESTIVAL_ITEMS: TestimonialItem[] = [
         driveLink: "https://drive.google.com/drive/folders/1iiALSbYw0MsHGhoudOgI3YgB_rM_4eZ0?usp=drive_link",
     },
     {
-        id: "oikotan",
-        title: "Oikotan",
+        id: "oikyotaan",
+        title: "Oikyotaan",
         description: "The regional annual musical and acoustic harmony fest. Beautiful memories of unplugged acoustic performances, vocal duels, and folk-infused jam sessions echoing traditional sounds.",
         image: "/images/Gallery_Exhibits/okiotan.webp",
+        imagePosition: "center 10%",
         driveLink: "https://drive.google.com/drive/folders/1IvbZ_BagEaTQ5xhRdeDQT8h3MFxCojGc?usp=drive_link",
     },
 ];

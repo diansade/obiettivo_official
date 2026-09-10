@@ -6,15 +6,11 @@ import { cn } from "@/lib/utils";
 import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
 
 export interface TestimonialItem {
-    /** Unique identifier for the card */
     id: string | number;
-    /** Title displayed for the card */
     title: string;
-    /** Description text for the card */
     description: string;
-    /** Image URL/path for the card */
     image: string;
-    /** External Google Drive link */
+    imagePosition?: string;
     driveLink?: string;
 }
 
@@ -155,6 +151,9 @@ export function TestimonialsCard({
                                         src={item.image}
                                         alt={item.title}
                                         className="w-full h-full object-cover select-none pointer-events-none"
+                                        style={{
+                                            objectPosition: item.imagePosition || "center center",
+                                        }}
                                         draggable={false}
                                     />
                                     {/* Subtle Overlay to match dark theme */}
